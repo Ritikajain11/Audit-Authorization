@@ -20,9 +20,9 @@ phases:
       - echo Build completed on `date`
       - docker push 274201610284.dkr.ecr.us-east-1.amazonaws.com/auth:latest
       - echo Writing definition files
-      - printf '[{"name":"auth","imageUri":"%s"}]' 274201610284.dkr.ecr.us-east-1.amazonaws.com/auth:latest > imageDefinition.json
+      - printf '[{"name":"auth","imageUri":"%s"}]' 274201610284.dkr.ecr.us-east-1.amazonaws.com/auth:latest > imagedefinitions.json
 
 artifacts:
   files:
-    - imageDefinition.json
+    - imagedefinitions.json
   
